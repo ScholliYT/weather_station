@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.8.2)
 project(weather_station)
-
-get_board_id(board_id nano atmega328)
+get_board_id(board_id d1_mini_pro)
 add_arduino_executable(weather_station "${board_id}" ${SOURCE_FILES})
 upload_arduino_target(weather_station "${board_id}" COM3)
